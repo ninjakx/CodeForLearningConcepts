@@ -4,6 +4,13 @@ Run Python Code:
 python3 main.py --n 5 --m 4 
 ```
 
+output:
+```
+No. of academics days: 10
+No. of consecutive days allowed to miss the classes: 4
+Result = (number of ways to attend classes over N days/probability that you will miss your graduation ceremony)
+         = 372/773
+```
 
 In a university, your attendance determines whether you will be
 allowed to attend your graduation ceremony.
