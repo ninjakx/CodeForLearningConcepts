@@ -45,3 +45,20 @@ func (r *RateLimiter) AllowVisit(ip string) bool {
 
 	return false
 }
+
+func main() {
+	limiter := NewRateLimiter(1*time.Minute, 5)
+	
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		ip := r.RemoteAddr // get the IP address from the request
+		if !limiter.AllowVisit(ip) {
+			http.Error(w, "Too many requests", http.StatusTooManyRequests)
+			return
+		}
+		
+		// handle the request
+
+	})
+	
+	http.ListenAndServe(":8080", nil)
+}
