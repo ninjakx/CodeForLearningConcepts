@@ -1,5 +1,6 @@
 Rate limiting is a technique used to control the rate of traffic sent or received by a system. It is commonly used to prevent overloading a server, to protect against abuse, and to optimize resource utilization. There are several ways to implement rate limiting, and two common methods are in-memory and Redis rate limiting. Here are their pros and cons:
-In-memory rate limiter
+
+<h3>In-memory rate limiter</h3>
 
 An in-memory rate limiter stores the rate limiting information in memory, usually as a hash map. It keeps track of the number of requests made by a particular client within a given time window and blocks any additional requests once the limit is reached. Here are the pros and cons:
 
