@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../Documents/go_server_app"
+		},
+		{
+			"path": "../../../Documents/golang-gorm-postgres"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
